@@ -1,0 +1,16 @@
+遠程倉庫：
+1、創建SSH KEY
+   ssh-keygen -t rsa -C "youremail@example.com"
+2、登錄你的github加入SSHKEY
+   SSHkey的目錄
+   cat ~/.ssh/id_rsa.pub
+   添加遠程倉庫
+3、git remote add origin https://github.com/JarvisHsu/Learngit.git
+4、git push -u origin master
+
+
+
+
+
+
+
