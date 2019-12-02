@@ -29,7 +29,7 @@ cd Python-3.7.3
 
 8.sudo apt-get install libffi-dev
 
-9.重复操作：
+9.重复建目錄的操作
 
 make && make test && make install
 

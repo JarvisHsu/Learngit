@@ -11,4 +11,5 @@ Git tracks changes of files.
 Creating a new branch is quick and simple.
 
 this is a test.
-
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
