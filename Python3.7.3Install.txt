@@ -1,0 +1,62 @@
+查看python的指向。
+ls -l /usr/bin | grep python
+
+解压安装包，安装包在网站自己下载
+tar -zxvf Python-3.7.3.tgz
+
+切换到目录
+cd Python-3.7.3
+
+建目录
+./configure --prefix=/usr/local/python3.7.3
+
+1.sudo apt-get update
+
+关于sudo apt-get update 出现fetch  ppa错误，请移步:https://blog.csdn.net/u014775723/article/details/85224026
+
+2.sudo apt-get upgrade
+
+关于sudo apt-get upgrade相关错误：请移步:https://blog.csdn.net/u014775723/article/details/85224071
+
+3.sudo apt-get dist-upgrade
+
+4.sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus
+
+5.sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev
+
+6.sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
+7.sudo apt-get install libssl-dev openssl
+
+8.sudo apt-get install libffi-dev
+
+9.重复操作：
+
+make && make test && make install
+
+添加环境变量
+
+PATH=$PATH:$HOME/bin:/usr/local/python3.7.3/bin
+
+
+默认指向新版
+
+ls -l /usr/bin | grep python
+
+删除原有链接
+rm /usr/bin/python 
+
+创建新链接
+
+ln -s /usr/bin/python3.4 /usr/bin/python
+
+建立指向
+mv /usr/bin/python /usr/bin/python.bak
+ln -s /usr/local/python3.7.3/bin/python3.7 /usr/bin/python
+mv /usr/bin/pip /usr/bin/pip.bak
+ln -s /usr/local/python3.7.3/bin/pip3 /usr/bin/pip
+
+大功告成啦
+
+
+
+
