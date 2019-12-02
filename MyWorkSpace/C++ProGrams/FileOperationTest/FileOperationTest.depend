@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1572083096 source:f:\my programs\c programs\fileoperationtest\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
