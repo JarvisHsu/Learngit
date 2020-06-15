@@ -7,10 +7,3 @@
    添加遠程倉庫
 3、git remote add origin https://github.com/JarvisHsu/Learngit.git
 4、git push -u origin master
-
-
-
-
-
-
-
